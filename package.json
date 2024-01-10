@@ -3,13 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://wangjie11.github.io/test-action",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "homepage": "https://wangjie11.github.io/test-action",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
