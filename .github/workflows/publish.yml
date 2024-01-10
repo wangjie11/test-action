@@ -5,15 +5,15 @@ on:
 			- main
 jobs:
 	build-and-deploy:
-		run-on: ubuntu-latest
+		runs-on: ubuntu-latest
 		steps:
 			- name: Checkout
-				uses: actions/checkout@master
+				uses: actions/checkout@v2
 
 			- name: Build and Deploy
 				uses: JamesIves/github-pages-deploy-action@master
 				env:
-					ACCESS_TOKEN: ${ { secrets.ACCESS_TOKEN } }
+					ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 					BRANCH: gh-pages
-					Folder: dist
+					FOLDER: dist
 					BUILD_SCRIPT: npm install && npm run build
