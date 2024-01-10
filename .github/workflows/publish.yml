@@ -10,11 +10,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-			- name: Set Node
-				uses: actions/setup-node@v4
-				with:
-					node-version: '18.x'
-
+      - name: set node
+        uses: actions/set-node@v4
+        with:
+          node-version: '18.x'
+	
       - name: Install and Build
         run: |
           npm ci
